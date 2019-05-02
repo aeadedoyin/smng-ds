@@ -1,0 +1,85 @@
+ /*Ignore this styling*/
+ body {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    max-width: 80%;
+    margin: 2rem auto;
+}
+.SECTION {
+    margin-bottom: 4rem;
+}
+
+/* START HERE */
+/* Overriding TAGS */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; 
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1.12em;
+}
+
+h5 {
+    font-size: .83em;
+}
+
+h6 {
+    font-size: .75em;
+}
+
+/* Overriding CLASSES */
+.btn {
+    cursor: pointer;
+}
+
+/* Custom CLASSES */
+.product-name {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.btn-smngprimary {
+    color: #ffffff;
+    background-color: #226600;
+    border-color: #226600;
+}
+
+.btn-smngprimary:hover {
+    color: #ffffff;
+    background-color: #598C3F;
+    border-color: #598C3F;
+}
+
+.btn-outline-smngprimary {
+    color: #226600;
+    border-color: #226600;
+}
+
+.btn-outline-smngprimary:hover {
+    color: #ffffff;
+    background-color: #226600;
+    border-color: #226600;
+}
+
+.btn-smngprimary:not(:disabled):not(.disabled).active,
+.btn-smngprimary:not(:disabled):not(.disabled):active,
+.show>.btn-smngprimary.dropdown-toggle,
+.btn-outline-smngprimary:not(:disabled):not(.disabled).active,
+.btn-outline-smngprimary:not(:disabled):not(.disabled):active,
+.show>.btn-smngprimary.dropdown-toggle {
+    color: #ffffff;
+    background-color: #1A4D00;
+    border-color: #1A4D00;
+}
