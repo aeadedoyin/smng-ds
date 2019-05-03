@@ -1,3 +1,4 @@
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,800|Open+Sans:400,400i,600,600i');
  html {
      scroll-behavior: smooth;
  }
@@ -10,13 +11,21 @@
  }
 
  pre {
-     max-width: 50%;
+     width: 50%;
      max-height: 400px;
  }
 
 .main-header {
     text-align: center;
     font-size: 1.25rem
+}
+
+.codeblocktitle {
+    padding: .5rem;
+    margin-bottom: -.5rem;
+    width: 50%;
+    background: #226600;
+    color: #ffffff;
 }
 
 .color-box {
@@ -29,9 +38,13 @@
      margin-bottom: 4rem;
  }
 
- .short-hr {
+ .sub-section-heading {
     width: 50%;
-    margin-left: 0px
+    background: #f7f7f7;
+    padding: 1rem .5rem;
+    margin-left: 0px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
  }
 
  .font1 {
@@ -85,7 +98,13 @@
      }
  }
 
- @media screen and (max-width: 400px){
+ @media screen and (max-width: 600px){
+    pre,
+    .sub-section-heading,
+    .codeblocktitle {
+        width: 100%;
+    }
+
      .sidenav {
          display: none;
      }

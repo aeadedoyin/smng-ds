@@ -34,64 +34,65 @@ h6 {
 }
 
 /* Custom CLASSES */
+/* Typography */
+.smng-product-name {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
 /* Colors */
- .smnggreen {
+ .smng-green {
      color: #226600;
  }
 
- .smnggreen-lite {
+ .smng-green-lite {
      color: #598C3F;
  }
 
-.smnggreen-dark {
+.smng-green-dark {
     color: #1A4D00;
 }
 
- .smnggreen-bg {
+ .smng-green-bg {
      color: #ffffff;
      background: #226600;
  }
 
- .smnggreen-lite-bg {
+ .smng-green-lite-bg {
      color: #ffffff;
      background: #598C3F;
  }
 
-.smnggreen-dark-bg {
+.smng-green-dark-bg {
     color: #ffffff;
     background: #1A4D00;
 }
 
- .smngorange {
+ .smng-orange {
      color: #FFA500;
  }
 
-.smngorange-lite {
+.smng-orange-lite {
     color: #FFBB3F;
 }
 
-.smngorange-dark {
+.smng-orange-dark {
     color: #BE7C04;
 }
 
- .smngorange-bg {
+ .smng-orange-bg {
      color: #ffffff;
      background: #FFA500;
  }
 
-.smngorange-lite-bg {
+.smng-orange-lite-bg {
     color: #ffffff;
     background: #FFBB3F;
 }
 
-.smngorange-dark-bg {
+.smng-orange-dark-bg {
     color: #ffffff;
     background: #BE7C04;
-}
-
-.product-name {
-    font-weight: 400;
-    font-size: 1.3rem;
 }
 
 .btn-smngprimary {
@@ -147,8 +148,8 @@ h6 {
 
 .btn-outline-smngsecondary:hover {
     color: #ffffff;
-    background-color: #226600;
-    border-color: #226600;
+    background-color: #FFA500;
+    border-color: #FFA500;
 }
 
 .btn-smngsecondary:not(:disabled):not(.disabled).active,

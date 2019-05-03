@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SMNG - Design System</title>
-    <link
-        href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,800|Open+Sans:400,400i,600,600i"
-        rel="stylesheet">
-    <link rel="stylesheet" href="prism.1.5.0.min.css" />
-    <link rel="stylesheet" href="bootstrap.4.3.1.min.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="smng-ds.css">
+    <link rel="stylesheet" href="css/prism.1.5.0.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.4.3.1.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/smng-ds.css">
 </head>
 
 <body>
@@ -24,13 +21,14 @@
                 <li><a href="#color">Color</a></li>
                 <li><a href="#typography">Typography</a></li>
                 <li><a href="#button">Button</a></li>
+                <li><a href="#components">Components</a></li>
             </ul>
 
             <br>
 
             <ul class="list">
                 <h5><strong>About</strong></h5>
-                <li><small>Created by</small><br><strong>SMNGTech</strong></li>
+                <li><small>Created by</small><br><strong>Adedoyin</strong></li>
             </ul>
         </div>
     </div>
@@ -42,25 +40,27 @@
                 <span style="font-weight: 200">Design System</span>
             </h1>
             <small style="font-size: 0.85rem"><strong>Base:</strong><em> Bootstrap-CSS Framework</em></small>
+            <hr>
         </div>
-        <hr>
+
         <a name="color" class="smngsection">
             <h1 class="font2">
-                <strong class="smnggreen">SMNG</strong>
+                <strong class="smng-green">SMNG</strong>
                 <span style="font-weight: 200">Color</span>
             </h1>
             <hr>
-            <h4>SMNG Green</h4>
-            <hr class="short-hr">
-            <div class="color-box smnggreen-lite-bg">Lite [G3] - <small>#598C3F</small></div>
-            <div class="color-box smnggreen-bg">Normal [G4] - <small>#226600</small></div>
-            <div class="color-box smnggreen-dark-bg">Dark [G5] - <small>#1A4D00</small></div>
-            <hr class="short-hr">
-            <h4>SMNG Orange</h4>
-            <hr class="short-hr">
-            <div class="color-box smngorange-lite-bg">Lite [O3] - <small>#FFBB3F</small></div>
-            <div class="color-box smngorange-bg">Normal [O4] - <small>#FFA500</small></div>
-            <div class="color-box smngorange-dark-bg">Dark [O5] - <small>#BE7C04</small></div>
+
+            <h4 class="sub-section-heading">SMNG Green</h4>
+            <div class="color-box smng-green-lite-bg">Lite [G3] - <small>#598C3F</small></div>
+            <div class="color-box smng-green-bg">Normal [G4] - <small>#226600</small></div>
+            <div class="color-box smng-green-dark-bg">Dark [G5] - <small>#1A4D00</small></div>
+            <br>
+
+            <h4 class="sub-section-heading">SMNG Orange</h4>
+            <div class="color-box smng-orange-lite-bg">Lite [O3] - <small>#FFBB3F</small></div>
+            <div class="color-box smng-orange-bg">Normal [O4] - <small>#FFA500</small></div>
+            <div class="color-box smng-orange-dark-bg">Dark [O5] - <small>#BE7C04</small></div>
+            
             <hr class="section-end">
         </a>
 
@@ -71,71 +71,80 @@
             </h1>
             <hr>
 
-            <h4>Body <small>[Root]</small></h4>
-            <hr class="short-hr">
-            <p>The body is the root of design. It's overided by the official font and size></p>
+            <h4 class="sub-section-heading">Body <small>[Root]</small></h4>
+            <p>The body is the root of design system. It's overrided by the official font and size as seen below</p>
             <p>The official font is <strong>'Open Sans'</strong> from <em>Google Fonts</em></p>
 
-            <pre><code class="language-html">Font in HTML&lt;Head>:
-    &lt;link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,800|Open+Sans:400,400i,600,600i" rel="stylesheet"&gt;
-</code></pre>
-            <pre><code class="language-css">CSS Snippet:
-    /*Override*/
-    body {
-        font-family: 'Open Sans';
-        font-size: 16px;
-    }
-</code></pre>
-            <hr class="section-end">
+            <p class="codeblocktitle"><small>In base CSS file:</small></p>
+            <pre>
+                <code class="line-numbers language-html">
+                    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i');
+                </code>
+            </pre>
+            <p class="codeblocktitle"><small>CSS Snippet</small></p>
+            <pre>
+                <code class="line-numbers language-css">
+                    /*Override*/
+                    body {
+                        font-family: 'Open Sans';
+                        font-size: 16px;
+                    }
+                </code>
+            </pre>
+            <br>
 
-            <h4>Header</h4>
-            <hr class="short-hr">
+            <h4 class="sub-section-heading">Header</h4>
             <h1>This is 'Header 1': H1</h1>
             <h2>This is 'Header 2': H2</h2>
             <h3>This is 'Header 3': H3</h3>
             <h4>This is 'Header 4': H4</h4>
             <h5>This is 'Header 5': H5</h5>
             <h6>This is 'Header 6': H6</h6>
-            <pre><code class="language-css">CSS Snippet:
-    /*Override*/
-    h1, h2, h3, h4, h5, h6 { font-weight: 600; }
-    h1 { font-size: 1.5em; }
-    h2 { font-size: 1.3em; }
-    h3 { font-size: 1.17em; }
-    h4 { font-size: 1.12em; }
-    h5 { font-size: .83em; }
-    h6 { font-size: .75em; }
-</code></pre>
-            <hr class="section-end">
+            
+            <p class="codeblocktitle"><small>CSS Snippet:</small></p>
+            <pre>
+                <code class="line-numbers language-css">
+                    /*Override*/
+                    h1, h2, h3, h4, h5, h6 { font-weight: 600; }
+                    h1 { font-size: 1.5em; }
+                    h2 { font-size: 1.3em; }
+                    h3 { font-size: 1.17em; }
+                    h4 { font-size: 1.12em; }
+                    h5 { font-size: .83em; }
+                    h6 { font-size: .75em; }
+                </code>
+            </pre>
+            <br>
 
-            <h4>Paragraph</h4>
-            <hr class="short-hr">
+            <h4 class="sub-section-heading">Paragraph</h4>
             <p>This is a 'paragraph'</p>
             <p><em>This is an 'italics paragraph'</em></p>
             <p><strong>This is a 'bold paragraph'</strong></p>
-            <hr class="section-end">
+            <br>
 
-            <h4>Product Name</h4>
-            <hr class="short-hr">
-            <h1 class="product-name">This is a 'Product Name', it uses H1 above with <code>weight:400</code> &
-                <code>size:1.3rem</code></h1>
-            <pre><code class="language-css">CSS Snippet:
-    /*Custom class*/
-    .product-name {
-        font-weight: 400;
-        font-size: 1.3rem;
-    }
-</code></pre>
-            <hr class="section-end">
+            <h4 class="sub-section-heading">Product Name <small>(in Product Page)</small></h4>
+            <p>Uses H1<em>(SEO Compliance)</em> as seen above and must implement the class below</p>
+            <h1 class="smng-product-name">I am a Sample Product Name</h1>
+            <p class="codeblocktitle"><small>CSS Snippet:</small></p>
+            <pre>
+                <code class="line-numbers language-css">
+                    .smng-product-name {
+                        font-weight: 400;
+                        font-size: 1.3rem;
+                    }
+                </code>
+            </pre>
+            <br>
 
-            <h4>Page Title<br>Product Description Headers</h4>
-            <hr class="short-hr">
-            <h2>This is a 'Page Title', it uses 'H2' above</h2>
-            <hr class="section-end">
+            <h4 class="sub-section-heading">Page Heading, Product Description Heading, Sub-category Page Heading</h4>
+            <p>Uses H2<em>(SEO Compliance)</em> as seen above</p>
+            <h2>I am a Sample Page Heading</h2>
+            <br>
 
-            <h4>Page Sub-Title<br>Product Description Sub-Headers</h4>
-            <hr class="short-hr">
-            <h3>This is a 'Page Title', it uses 'H3' above</h3>
+            <h4 class="sub-section-heading">Page Sub-Heading, Product Description Sub-Heading</h4>
+            <p>Uses H3<em>(SEO Compliance)</em> as seen above</p>
+            <h3>I am a Sample Page Sub-Heading</h3>
+            
             <hr class="section-end">
         </a>
 
@@ -143,70 +152,119 @@
             <h1 style="font-family: Montserrat"><strong style="color: #226600">SMNG</strong> <span
                     style="font-weight: 200">Buttons</span></h1>
             <hr>
-            <h4>Primary Button (Custom)</h4>
-            <p>The primary button uses the variants of the <em>primary color</em> 'G4' in place of the Bootstrap see sample
-                code below</p>
-            <hr class="short-hr">
-            <div class="btn btn-sm btn-smngprimary">Small</div>
-            <div class="btn btn-smngprimary">Normal</div>
-            <div class="btn btn-lg btn-outline-smngprimary">Large</div>
-            <hr class="section-end">
 
-            <h4>Secondary Button (Custom)</h4>
-            <p>The secondary button uses the variants of the <em>secondary color</em> 'O4' in place of the Bootstrap see
-                sample code below</p>
-            <hr class="short-hr">
-            <div class="btn btn-sm btn-smngsecondary">Small</div>
-            <div class="btn btn-smngsecondary">Normal</div>
-            <div class="btn btn-lg btn-outline-smngsecondary">Large</div>
-            <hr class="section-end">
+            <h4 class="sub-section-heading">Button</h4>
+            <p>All buttons a direct child of the Bootstrap <code>btn</code> class 
+                and can consume other <code>btn</code> properties e.g. <code>btn-lg, btn-sm</code> etc</p>
+            <br>
 
-            <pre><code class="language-css">CSS Snippet:
-    /*Overide Bootstrap-CSS*/
-    .btn {
-        margin-top: 5px;
-        cursor: pointer;
-    }
+            <h4 class="sub-section-heading">Primary <small>[Green]</small> Button (Custom)</h4>
+            <p>The primary button uses the variants of the <em>primary color</em> 'G4' as seen above
+                and its adapted from the Bootstrap <code>btn-primary</code> see sample code below</p>
+            <div>
+                <div class="btn btn-sm btn-smngprimary">Small</div>
+                <div class="btn btn-smngprimary">Normal</div>
+                <div class="btn btn-lg btn-outline-smngprimary">Large</div>
+            </div>
+            <br>
 
-    /*Create custom button*/
-    .btn-smngprimary {
-        color: #ffffff;
-        background-color: #226600;
-        border-color: #226600;
-    }
+            <h4 class="sub-section-heading">Secondary <small>[Orange]</small> Button (Custom)</h4>
+            <p>The secondary button uses the variants of the <em>secondary color</em> 'O4' as seen above
+                and its also adapted from the Bootstrap <code>btn-primary</code> see sample code below</p>
+                <div>
+                    <div class="btn btn-sm btn-smngsecondary">Small</div>
+                    <div class="btn btn-smngsecondary">Normal</div>
+                    <div class="btn btn-lg btn-outline-smngsecondary">Large</div>
+                </div>
+            <br>
 
-    .btn-smngprimary:hover {
-        color: #ffffff;
-        background-color: #598C3F;
-        border-color: #598C3F;
-    }
+            <h4 class="sub-section-heading">Snippet for both buttons above </h4>
+            <p class="codeblocktitle"><small>CSS Snippet:</small></p>
+            <pre>
+                <code class="line-numbers language-css">
+                    .btn-smngprimary {
+                        color: #ffffff;
+                        background-color: #226600;
+                        border-color: #226600;
+                    }
 
-    .btn-outline-smngprimary {
-        color: #226600;
-        border-color: #226600;
-    }
+                    .btn-smngprimary:hover {
+                        color: #ffffff;
+                        background-color: #598C3F;
+                        border-color: #226600;
+                    }
 
-    .btn-outline-smngprimary:hover {
-        color: #ffffff;
-        background-color: #226600;
-        border-color: #226600;
-    }
+                    .btn-outline-smngprimary {
+                        color: #226600;
+                        border-color: #226600;
+                    }
 
-    .btn-smngprimary:not(:disabled):not(.disabled).active,
-    .btn-smngprimary:not(:disabled):not(.disabled):active,
-    .show>.btn-smngprimary.dropdown-toggle,
-    .btn-outline-smngprimary:not(:disabled):not(.disabled).active,
-    .btn-outline-smngprimary:not(:disabled):not(.disabled):active,
-    .show>.btn-smngprimary.dropdown-toggle {
-        color: #ffffff;
-        background-color: #1A4D00;
-        border-color: #1A4D00;
-    }
-</code></pre>
+                    .btn-outline-smngprimary:hover {
+                        color: #ffffff;
+                        background-color: #226600;
+                        border-color: #226600;
+                    }
+
+                    .btn-smngprimary:not(:disabled):not(.disabled).active,
+                    .btn-smngprimary:not(:disabled):not(.disabled):active,
+                    .show>.btn-smngprimary.dropdown-toggle,
+                    .btn-outline-smngprimary:not(:disabled):not(.disabled).active,
+                    .btn-outline-smngprimary:not(:disabled):not(.disabled):active,
+                    .show>.btn-smngprimary.dropdown-toggle {
+                        color: #ffffff;
+                        background-color: #1A4D00;
+                        border-color: #1A4D00;
+                    }
+
+                    .btn-smngsecondary {
+                        color: #ffffff;
+                        background-color: #FFA500;
+                        border-color: #FFA500;
+                    }
+
+                    .btn-smngsecondary:hover {
+                        color: #ffffff;
+                        background-color: #FFBB3F;
+                        border-color: #FFA500;
+                    }
+
+                    .btn-outline-smngsecondary {
+                        color: #FFA500;
+                        border-color: #FFA500;
+                    }
+
+                    .btn-outline-smngsecondary:hover {
+                        color: #ffffff;
+                        background-color: #FFA500;
+                        border-color: #FFA500;
+                    }
+
+                    .btn-smngsecondary:not(:disabled):not(.disabled).active,
+                    .btn-smngsecondary:not(:disabled):not(.disabled):active,
+                    .show>.btn-smngsecondary.dropdown-toggle,
+                    .btn-outline-smngsecondary:not(:disabled):not(.disabled).active,
+                    .btn-outline-smngsecondary:not(:disabled):not(.disabled):active,
+                    .show>.btn-smngsecondary.dropdown-toggle {
+                        color: #ffffff;
+                        background-color: #BE7C04;
+                        border-color: #BE7C04;
+                    }
+                </code>
+            </pre>
+            
             <hr class="section-end">
         </a>
+
+        <a name="components" class="smngsection">
+            <h1 style="font-family: Montserrat"><strong style="color: #226600">SMNG</strong> <span
+                    style="font-weight: 200">Components</span></h1>
+            <hr>
+        </a>
+
     </div>
-    <script src="prism.1.5.0.min.js"></script>
+
+    <script src="js/prism.1.5.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
