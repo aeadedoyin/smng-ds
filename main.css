@@ -1,13 +1,46 @@
+ html {
+     scroll-behavior: smooth;
+ }
+
  body {
      font-family: 'Open Sans';
      font-size: 16px;
      max-width: 80%;
      margin: 2rem auto;
-     scroll-behavior: smooth;
  }
+
+ pre {
+     max-width: 50%;
+     max-height: 400px;
+ }
+
+.main-header {
+    text-align: center;
+    font-size: 1.25rem
+}
+
+.color-box {
+    margin: 5px;
+    padding: 1rem;
+    border: 1px solid #f7f7f7;
+    box-shadow: 0 2.5px 20px #c9c9c9;
+}
 
  .section-end {
      margin-bottom: 4rem;
+ }
+
+ .short-hr {
+    width: 50%;
+    margin-left: 0px
+ }
+
+ .font1 {
+    font-family: 'Open Sans';
+ }
+
+ .font2 {
+    font-family: 'Montserrat';
  }
 
  .sidenav {
@@ -46,4 +79,14 @@
      .sidenav a {
          font-size: 18px;
      }
+ }
+
+ @media screen and (max-width: 400px){
+     .sidenav {
+         display: none;
+     }
+
+      .main {
+          margin: 0;
+      }
  }
