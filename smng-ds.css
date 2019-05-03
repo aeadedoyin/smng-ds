@@ -43,7 +43,7 @@ h6 {
      color: #598C3F;
  }
 
-.smnggreen-darker {
+.smnggreen-dark {
     color: #1A4D00;
 }
 
@@ -57,7 +57,7 @@ h6 {
      background: #598C3F;
  }
 
-.smnggreen-darker-bg {
+.smnggreen-dark-bg {
     color: #ffffff;
     background: #1A4D00;
 }
@@ -70,7 +70,7 @@ h6 {
     color: #FFBB3F;
 }
 
-.smngorange-darker {
+.smngorange-dark {
     color: #BE7C04;
 }
 
@@ -84,7 +84,7 @@ h6 {
     background: #FFBB3F;
 }
 
-.smngorange-darker-bg {
+.smngorange-dark-bg {
     color: #ffffff;
     background: #BE7C04;
 }
@@ -103,7 +103,7 @@ h6 {
 .btn-smngprimary:hover {
     color: #ffffff;
     background-color: #598C3F;
-    border-color: #598C3F;
+    border-color: #226600;
 }
 
 .btn-outline-smngprimary {
@@ -130,19 +130,19 @@ h6 {
 
 .btn-smngsecondary {
     color: #ffffff;
-    background-color: #226600;
-    border-color: #226600;
+    background-color: #FFA500;
+    border-color: #FFA500;
 }
 
 .btn-smngsecondary:hover {
     color: #ffffff;
-    background-color: #598C3F;
-    border-color: #598C3F;
+    background-color: #FFBB3F;
+    border-color: #FFA500;
 }
 
 .btn-outline-smngsecondary {
-    color: #226600;
-    border-color: #226600;
+    color: #FFA500;
+    border-color: #FFA500;
 }
 
 .btn-outline-smngsecondary:hover {
@@ -158,6 +158,6 @@ h6 {
 .btn-outline-smngsecondary:not(:disabled):not(.disabled):active,
 .show>.btn-smngsecondary.dropdown-toggle {
     color: #ffffff;
-    background-color: #1A4D00;
-    border-color: #1A4D00;
+    background-color: #BE7C04;
+    border-color: #BE7C04;
 }

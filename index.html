@@ -30,7 +30,7 @@
 
             <ul class="list">
                 <h5><strong>About</strong></h5>
-                <p><small>Created by</small><br><strong>SMNGTech</strong></p>
+                <li><small>Created by</small><br><strong>SMNGTech</strong></li>
             </ul>
         </div>
     </div>
@@ -50,10 +50,17 @@
                 <span style="font-weight: 200">Color</span>
             </h1>
             <hr>
-            <div class="row">
-                <div class="col-6 color-box smnggreen-bg">SMNG GREEN - G4</div>
-                <div class="col-6 color-box smngorange-bg">SMNG ORANGE - O4</div>
-            </div>
+            <h4>SMNG GREEN</h4>
+            <hr class="short-hr">
+            <div class="color-box smnggreen-lite-bg">Lite [G3] - <small>#598C3F</small></div>
+            <div class="color-box smnggreen-bg">Normal [G4] - <small>#226600</small></div>
+            <div class="color-box smnggreen-dark-bg">Dark [G5] - <small>#1A4D00</small></div>
+            <hr class="short-hr">
+            <h4>SMNG ORANGE</h4>
+            <hr class="short-hr">
+            <div class="color-box smngorange-lite-bg">Lite [O3] - <small>#FFBB3F</smal></div>
+            <div class="color-box smngorange-bg">Normal [O4] - <small>#FFA500</small></div>
+            <div class="color-box smngorange-dark-bg">Dark [O5] - <small>#BE7C04</small></div>
             <hr class="section-end">
         </a>
 
@@ -66,14 +73,13 @@
 
             <h4>Body <small>[Root]</small></h4>
             <hr class="short-hr">
-            <p>The body is the root of design. Just a few overriding: <code>font-size</code> and <code>font-family</code>
-            </p>
+            <p>The body is the root of design. It's overided by the official font and size></p>
             <p>The official font is <strong>'Open Sans'</strong> from <em>Google Fonts</em></p>
 
-            <pre><code class="language-html">Sample CSS:
+            <pre><code class="language-html">Font in HTML&lt;Head>:
     &lt;link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,800|Open+Sans:400,400i,600,600i" rel="stylesheet"&gt;
 </code></pre>
-            <pre><code class="language-css">Sample CSS:
+            <pre><code class="language-css">CSS Snippet:
     /*Override*/
     body {
         font-family: 'Open Sans';
@@ -90,7 +96,7 @@
             <h4>This is 'Header 4': H4</h4>
             <h5>This is 'Header 5': H5</h5>
             <h6>This is 'Header 6': H6</h6>
-            <pre><code class="language-css">Sample CSS:
+            <pre><code class="language-css">CSS Snippet:
     /*Override*/
     h1, h2, h3, h4, h5, h6 { font-weight: 600; }
     h1 { font-size: 1.5em; }
@@ -113,7 +119,7 @@
             <hr class="short-hr">
             <h1 class="product-name">This is a 'Product Name', it uses H1 above with <code>weight:400</code> &
                 <code>size:1.3rem</code></h1>
-            <pre><code class="language-css">Sample CSS:
+            <pre><code class="language-css">CSS Snippet:
     /*Custom class*/
     .product-name {
         font-weight: 400;
@@ -155,7 +161,7 @@
             <div class="btn btn-lg btn-outline-smngsecondary">Large</div>
             <hr class="section-end">
 
-            <pre><code class="language-css">Sample CSS:
+            <pre><code class="language-css">CSS Snippet:
     /*Overide Bootstrap-CSS*/
     .btn {
         margin-top: 5px;

@@ -20,10 +20,9 @@
 }
 
 .color-box {
-    margin: 5px;
+    max-width: 50%;
     padding: 1rem;
     border: 1px solid #f7f7f7;
-    box-shadow: 0 2.5px 20px #c9c9c9;
 }
 
  .section-end {
@@ -58,12 +57,17 @@
  .sidenav li,
  .sidenav a {
      text-decoration: none;
-     color: #818181;
+     color: #226600;
      display: block;
+     padding: .15rem;
  }
 
  .sidenav a:hover {
-     color: #f1f1f1;
+     color: #598C3F;
+ }
+
+.sidenav a:target {
+     background: red;
  }
 
  .main {
