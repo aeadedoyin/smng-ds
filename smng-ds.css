@@ -29,6 +29,7 @@ h6 {
 
 /* Overriding CLASSES */
 .btn {
+    margin-top: 5px;
     cursor: pointer;
 }
 
