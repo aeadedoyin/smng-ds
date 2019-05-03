@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SMNG - Design System</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,800|Open+Sans:400,400i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
     <link rel="stylesheet" href="bootstrap.4.3.1.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="smng-ds.css">
@@ -79,8 +80,51 @@
         <div class="btn btn-smngprimary">Ok</div>
         <div class="btn btn-smngprimary">Add to Cart</div>
         <div class="btn btn-outline-smngprimary">Add to Cart</div>
+        <pre><code class="line-numbers language-css">
+        /*Overide Bootstrap-CSS*/
+        .btn {
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        /*Create custom button*/
+        .btn-smngprimary {
+            color: #ffffff;
+            background-color: #226600;
+            border-color: #226600;
+        }
+        
+        .btn-smngprimary:hover {
+            color: #ffffff;
+            background-color: #598C3F;
+            border-color: #598C3F;
+        }
+        
+        .btn-outline-smngprimary {
+            color: #226600;
+            border-color: #226600;
+        }
+        
+        .btn-outline-smngprimary:hover {
+            color: #ffffff;
+            background-color: #226600;
+            border-color: #226600;
+        }
+        
+        .btn-smngprimary:not(:disabled):not(.disabled).active,
+        .btn-smngprimary:not(:disabled):not(.disabled):active,
+        .show>.btn-smngprimary.dropdown-toggle,
+        .btn-outline-smngprimary:not(:disabled):not(.disabled).active,
+        .btn-outline-smngprimary:not(:disabled):not(.disabled):active,
+        .show>.btn-smngprimary.dropdown-toggle {
+            color: #ffffff;
+            background-color: #1A4D00;
+            border-color: #1A4D00;
+        }
+        </code></pre>
         <hr class="section-end">
     </div>
     </div>
+    <script src="prism.1.5.0.min.js"></script>
 </body>
 </html>
