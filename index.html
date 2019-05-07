@@ -73,8 +73,8 @@
             </h1>
             <hr>
 
-            <h4 class="sub-section-heading">Body <small>[Root]</small></h4>
-            <p>The body is the root of design system. It's overrided by the official font and size as seen below</p>
+            <h4 class="sub-section-heading">Body <small>[Root:HTML]</small></h4>
+            <p>The body/html is the root of design system. It's overrided by the official font and size as seen below</p>
             <p>The official font is <strong>'Open Sans'</strong> from <em>Google Fonts</em></p>
 
             <p class="codeblocktitle"><small>In base CSS file:</small></p>
@@ -165,7 +165,19 @@
 
             <h4 class="sub-section-heading">Button</h4>
             <p>All buttons are direct children of the Bootstrap <code>btn</code> class 
-                and can consume other <code>btn</code> properties e.g. <code>btn-lg, btn-sm</code> etc</p>
+                and can consume other <code>btn</code> properties e.g. <code>btn-lg, btn-sm</code> etc.</p>
+            <p>However the <code>btn</code> class is overriden as seen below:</p>
+            <p class="codeblocktitle"><small>CSS Snippet:</small></p>
+            <pre>
+                <code class="line-numbers language-css">
+                    /*Override*/
+                    .btn {
+                        margin-top: 0.25rem;
+                        margin-bottom: 0.25rem;
+                        cursor: pointer !important;
+                    }
+                </code>
+            </pre>
             <br>
 
             <h4 class="sub-section-heading">Primary <small>[Green]</small> Button (Custom)</h4>
@@ -274,7 +286,7 @@
             <h4 class="sub-section-heading">Product Canvas</h4>
             <p>The product canvas is the most used canvas</p>
             <div class="row clear-row-lr">
-                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 clear-col-lr my-1">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 clear-col-lr my-1">
                     <div class="product-col mx-1">
                         <div class="card product-canvas">
                             <div class="card-img-top product-img">
@@ -295,7 +307,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 clear-col-lr my-1">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 clear-col-lr my-1">
                     <div class="product-col mx-1">
                         <div class="card product-canvas">
                             <div class="card-img-top product-img">
@@ -315,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 clear-col-lr my-1">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 clear-col-lr my-1">
                     <div class="product-col mx-1">
                         <div class="card product-canvas">
                             <div class="card-img-top product-img">
@@ -335,7 +347,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 clear-col-lr my-1">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 clear-col-lr my-1">
                     <div class="product-col mx-1">
                         <div class="card product-canvas">
                             <div class="card-img-top product-img">
@@ -355,7 +367,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 clear-col-lr my-1">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 clear-col-lr my-1">
                     <div class="product-col mx-1">
                         <div class="card product-canvas">
                             <div class="card-img-top product-img">
@@ -375,7 +387,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 clear-col-lr my-1">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 clear-col-lr my-1">
                     <div class="product-col mx-1">
                         <div class="card product-canvas">
                             <div class="card-img-top product-img">
