@@ -169,8 +169,13 @@ h6 {
 }
 
 /* Product Canvas */
+.product-col {
+    height: 100%;
+}
+
 .product-canvas {
     width: 100%;
+    height: 100%;
     transition: all 0.4s ease-in;
 }
 
@@ -196,7 +201,6 @@ h6 {
 }
 
 .product-body {
-    min-height: 90px;
     padding: 0.4rem;
 }
 
@@ -235,5 +239,8 @@ h6 {
 
 /* Responsiveness */
 @media screen and (max-width: 600px) {
-
+    .product-body .product-oldprice,
+     .product-body .product-price {
+         font-size: 1rem;
+     }
 }
