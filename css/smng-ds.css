@@ -1,6 +1,11 @@
 /* Overriding TAGS */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
 }
 
 h1 {
@@ -30,7 +35,7 @@ h6 {
 /* Overriding CLASSES */
 .btn {
     margin-top: 5px;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 /* Custom CLASSES */
@@ -41,36 +46,36 @@ h6 {
 }
 
 /* Colors */
- .smng-green {
-     color: #226600;
- }
+.smng-green {
+    color: #226600;
+}
 
- .smng-green-lite {
-     color: #598C3F;
- }
+.smng-green-lite {
+    color: #598C3F;
+}
 
 .smng-green-dark {
     color: #1A4D00;
 }
 
- .smng-green-bg {
-     color: #ffffff;
-     background: #226600;
- }
+.smng-green-bg {
+    color: #ffffff;
+    background: #226600;
+}
 
- .smng-green-lite-bg {
-     color: #ffffff;
-     background: #598C3F;
- }
+.smng-green-lite-bg {
+    color: #ffffff;
+    background: #598C3F;
+}
 
 .smng-green-dark-bg {
     color: #ffffff;
     background: #1A4D00;
 }
 
- .smng-orange {
-     color: #FFA500;
- }
+.smng-orange {
+    color: #FFA500;
+}
 
 .smng-orange-lite {
     color: #FFBB3F;
@@ -80,10 +85,10 @@ h6 {
     color: #BE7C04;
 }
 
- .smng-orange-bg {
-     color: #ffffff;
-     background: #FFA500;
- }
+.smng-orange-bg {
+    color: #ffffff;
+    background: #FFA500;
+}
 
 .smng-orange-lite-bg {
     color: #ffffff;
@@ -161,4 +166,74 @@ h6 {
     color: #ffffff;
     background-color: #BE7C04;
     border-color: #BE7C04;
+}
+
+/* Product Canvas */
+.product-canvas {
+    width: 100%;
+    transition: all 0.4s ease-in;
+}
+
+.product-canvas:hover {
+    box-shadow: 0 5px 10px #c9c9c9;
+    transition: all 0.4s ease-in
+}
+
+.product-img {
+    height: 250px;
+    margin: auto;
+    padding: 0.4rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    cursor: zoom-in;
+}
+
+.product-img>img {
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.product-body {
+    min-height: 90px;
+    padding: 0.4rem;
+}
+
+.product-body .product-name * {
+    text-decoration: none;
+    color: #226600;
+}
+
+.product-body .product-name *:hover {
+    color: #598C3F;
+}
+
+.product-body .product-price {
+    font-weight: 700 !important;
+}
+
+.product-body .product-oldprice {
+    text-decoration: line-through !important;
+    margin-left: 0.4rem;
+}
+
+.product-body .product-fav,
+.product-body .product-fav>img {
+    max-width: 25px;
+    cursor: pointer;
+}
+
+.product-body .product-fav {
+    margin-left: 0.4rem;
+}
+
+.product-footer {
+    padding: 0.4rem;
+    text-align: center;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 600px) {
+
 }

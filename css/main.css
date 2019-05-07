@@ -1,19 +1,20 @@
- @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,800|Open+Sans:400,400i,600,600i');
- html {
-     scroll-behavior: smooth;
- }
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,800|Open+Sans:400,400i,600,600i');
 
- body {
-     font-family: 'Open Sans';
-     font-size: 16px;
-     max-width: 80%;
-     margin: 2rem auto;
- }
+html {
+    scroll-behavior: smooth;
+}
 
- pre {
-     width: 50%;
-     max-height: 400px;
- }
+body {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+pre {
+    width: 50%;
+    max-height: 400px;
+}
 
 .main-header {
     text-align: center;
@@ -29,87 +30,124 @@
 }
 
 .color-box {
-    max-width: 50%;
+    width: 50%;
     padding: 1rem;
-    border: 1px solid #f7f7f7;
+    margin: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 
- .section-end {
-     margin-bottom: 4rem;
- }
+.section-end {
+    margin-bottom: 4rem;
+}
 
- .sub-section-heading {
+.sub-section-heading {
     width: 50%;
     background: #f7f7f7;
     padding: 1rem .5rem;
     margin-left: 0px;
     border-top: 1px solid rgba(0, 0, 0, .1);
     border-bottom: 1px solid rgba(0, 0, 0, .1);
- }
+}
 
- .font1 {
+.font1 {
     font-family: 'Open Sans';
- }
+}
 
- .font2 {
+.font2 {
     font-family: 'Montserrat';
- }
+}
 
- .sidenav {
-     height: 100%;
-     width: 160px;
-     position: fixed;
-     z-index: 1;
-     top: 0;
-     left: 0;
-     background-color: #f1f1f1;
-     overflow-x: hidden;
-     padding-top: 20px;
- }
+.clear-col-r {
+    padding-right: 0px !important;
+}
 
- .sidenav li,
- .sidenav a {
-     text-decoration: none;
-     color: #226600;
-     display: block;
-     padding: .15rem;
- }
+.clear-col-l {
+    padding-left: 0px !important;
+}
 
- .sidenav a:hover {
-     color: #598C3F;
- }
+.clear-col-lr {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.clear-row-l {
+    margin-left: 0px;
+}
+
+.clear-row-r {
+    margin-right: 0px;
+}
+
+.clear-row-lr {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav li,
+.sidenav a {
+    text-decoration: none;
+    color: #226600;
+    display: block;
+    padding: .15rem;
+}
+
+.sidenav a:hover {
+    color: #598C3F;
+}
 
 .sidenav a:target {
-     background: red;
- }
+    background: red;
+}
 
- .main {
-     margin-left: 160px;
-     padding: 0px 10px;
- }
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
 
- @media screen and (max-height: 450px) {
-     .sidenav {
-         padding-top: 15px;
-     }
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
 
-     .sidenav a {
-         font-size: 18px;
-     }
- }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
 
- @media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        margin: 0 0.25rem;
+    }
+
     pre,
     .sub-section-heading,
     .codeblocktitle {
         width: 100%;
     }
 
-     .sidenav {
-         display: none;
-     }
+    .sidenav {
+        display: none;
+    }
 
-      .main {
-          margin: 0;
-      }
- }
+    .main {
+        margin: 0;
+    }
+
+    .color-box {
+        width: 100%;
+    }
+}
