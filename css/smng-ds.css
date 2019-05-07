@@ -191,7 +191,6 @@ h6 {
     padding: 0.4rem;
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
-    cursor: zoom-in;
 }
 
 .product-img>img {
@@ -238,8 +237,9 @@ h6 {
     text-align: center;
 }
 
-@media screen and  (max-width: 1200px) {
-    body {
-        font-size: 13px;
+@media screen and (max-width: 450px) {
+    .product-body .product-price,
+    .product-body .product-oldprice {
+        font-size: 0.9rem;
     }
 }
