@@ -236,11 +236,3 @@ h6 {
     padding: 0.4rem;
     text-align: center;
 }
-
-/* Responsiveness */
-@media screen and (max-width: 600px) {
-    .product-body .product-oldprice,
-     .product-body .product-price {
-         font-size: 1rem;
-     }
-}
