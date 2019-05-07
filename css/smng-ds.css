@@ -185,7 +185,7 @@ h6 {
 }
 
 .product-img {
-    height: 250px;
+    height: 200px;
     margin: auto;
     padding: 0.4rem;
     text-align: center;
@@ -235,4 +235,10 @@ h6 {
 .product-footer {
     padding: 0.4rem;
     text-align: center;
+}
+
+@media screen and  (max-width: 1200px) {
+    body {
+        font-size: 13px;
+    }
 }
