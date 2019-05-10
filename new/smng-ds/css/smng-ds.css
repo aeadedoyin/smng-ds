@@ -34,7 +34,8 @@ h6 {
 
 /* Overriding CLASSES */
 .btn {
-    min-width: 35px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
     cursor: pointer !important;
 }
 
@@ -235,19 +236,6 @@ h6 {
 .product-footer {
     padding: 0.4rem;
     text-align: center;
-}
-
-.product-group {
-    width: 120px;
-    margin: auto;
-}
-
-.product-quantity:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #598C3F;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(89, 140, 63, 0.25);
 }
 
 @media screen and (max-width: 450px) {
